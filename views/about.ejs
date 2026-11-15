@@ -1,28 +1,76 @@
+<%- include('partials/header') %>
+<%- include('partials/main_nav') %>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-</head>
-<body>
+<main class="container my-5">
 
-  <h1><%= title %></h1>
+  <section class="mb-5">
+    <h1 class="display-5 fw-bold mb-4">
+      <i class="fa-solid fa-user text-primary me-2"></i>
+      About Me
+    </h1>
 
-  <h2>Farhan Hossain</h2>
+    <div class="card shadow-sm">
+      <div class="card-body p-4">
 
-  <p>
-    I am a student at Ontario Tech University pursuing a
-    Bachelor of Information Technology (Honours) in
-    Networking & IT Security.
-  </p>
+        <h2 class="h3 mb-3">
+          Farhan Hossain
+        </h2>
 
-  <p>
-    My interests include networking, cybersecurity,
-    programming, and information technology.
-  </p>
+        <p class="lead">
+          I am a student at Ontario Tech University pursuing
+          a Bachelor of Information Technology (Honours)
+          in Networking &amp; IT Security.
+        </p>
 
-</body>
-</html>
-    
+        <p>
+          My academic interests include networking,
+          cybersecurity, programming, and information
+          technology. I enjoy developing my technical
+          skills through coursework and hands-on projects.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="h4 fw-bold mb-3">
+      <i class="fa-solid fa-graduation-cap text-primary me-2"></i>
+      Education &amp; Interests
+    </h2>
+
+    <div class="row g-3">
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5">Education</h3>
+            <p class="mb-0">
+              Ontario Tech University<br>
+              Bachelor of Information Technology (Honours)<br>
+              Networking &amp; IT Security
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h5">Technical Interests</h3>
+            <ul class="mb-0">
+              <li>Computer Networking</li>
+              <li>Cybersecurity</li>
+              <li>Programming</li>
+              <li>Information Technology</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<%- include('partials/footer') %>    

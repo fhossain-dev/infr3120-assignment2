@@ -1,11 +1,37 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('partials/header') %>
+<%- include('partials/main_nav') %>
+
+<main class="container my-5">
+  <section class="text-center py-5">
+
+    <h1 class="display-4 fw-bold mb-3">
+      Welcome to My Portfolio
+    </h1>
+
+    <h2 class="h4 text-secondary mb-4">
+      Farhan Hossain
+    </h2>
+
+    <p class="lead mx-auto" style="max-width: 750px;">
+      I am an Information Technology student at Ontario Tech
+      University, specializing in Networking and IT Security.
+      Welcome to my portfolio, where you can learn more about
+      me, explore my technical projects, and get in touch.
+    </p>
+
+    <div class="mt-4">
+      <a href="/about" class="btn btn-primary btn-lg me-2">
+        <i class="fa-solid fa-user me-2"></i>
+        About Me
+      </a>
+
+      <a href="/projects" class="btn btn-outline-primary btn-lg">
+        <i class="fa-solid fa-laptop-code me-2"></i>
+        View Projects
+      </a>
+    </div>
+
+  </section>
+</main>
+
+<%- include('partials/footer') %>

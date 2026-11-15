@@ -1,55 +1,176 @@
+<%- include('partials/header') %>
+<%- include('partials/main_nav') %>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-</head>
-<body>
+<main class="container my-5">
 
-  <h1><%= title %></h1>
+  <!-- Page Heading -->
+  <section class="mb-5">
 
-  <h2>Get in Touch</h2>
+    <h1 class="display-5 fw-bold mb-3">
+      <i class="fa-solid fa-envelope text-primary me-2"></i>
+      Contact Me
+    </h1>
 
-  <p>
-    Feel free to reach out to me regarding
-    networking, cybersecurity, programming,
-    or other technology-related opportunities.
-  </p>
+    <p class="lead text-secondary">
+      Feel free to reach out regarding networking,
+      cybersecurity, programming, or other
+      technology-related opportunities.
+    </p>
 
-  <h3>Professional Profiles</h3>
+  </section>
 
-  <p>
-    GitHub:
-    <a href="https://github.com/fhossain-dev">
-      github.com/fhossain-dev
-    </a>
-  </p>
+  <div class="row g-4">
 
-  <p>
-    LinkedIn:
-    <a href="https://www.linkedin.com/in/farhan-h-38bb24306">
-      Farhan Hossain
-    </a>
-  </p>
+    <!-- Professional Profiles -->
+    <div class="col-md-5">
 
-  <h3>Contact Form</h3>
+      <div class="card shadow-sm h-100">
 
-  <form action="mailto:YOUR_EMAIL@example.com" method="post" enctype="text/plain">
+        <div class="card-body p-4">
 
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+          <h2 class="h4 fw-bold mb-4">
+            <i class="fa-solid fa-address-card text-primary me-2"></i>
+            Get in Touch
+          </h2>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+          <p>
+            Connect with me through my professional
+            profiles or send me a message using
+            the contact form.
+          </p>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+          <h3 class="h5 fw-bold mt-4 mb-3">
+            Professional Profiles
+          </h3>
 
-    <button type="submit">Send Message</button>
+          <!-- GitHub -->
+          <p>
+            <a
+              href="https://github.com/fhossain-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline-dark w-100"
+            >
+              <i class="fa-brands fa-github me-2"></i>
+              GitHub Profile
+            </a>
+          </p>
 
-  </form>
+          <!-- LinkedIn -->
+          <p>
+            <a
+              href="https://www.linkedin.com/in/farhan-h-38bb24306"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline-primary w-100"
+            >
+              <i class="fa-brands fa-linkedin me-2"></i>
+              LinkedIn Profile
+            </a>
+          </p>
 
-</body>
-</html>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col-md-7">
+
+      <div class="card shadow-sm h-100">
+
+        <div class="card-body p-4">
+
+          <h2 class="h4 fw-bold mb-4">
+            <i class="fa-solid fa-paper-plane text-primary me-2"></i>
+            Send a Message
+          </h2>
+
+          <form
+            action="mailto:YOUR_EMAIL@example.com"
+            method="post"
+            enctype="text/plain"
+          >
+
+            <!-- Name -->
+            <div class="mb-3">
+
+              <label for="name" class="form-label">
+                Full Name
+              </label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              >
+
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+
+              <label for="email" class="form-label">
+                Email Address
+              </label>
+
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              >
+
+            </div>
+
+            <!-- Message -->
+            <div class="mb-4">
+
+              <label for="message" class="form-label">
+                Your Message
+              </label>
+
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+
+            </div>
+
+            <!-- Submit -->
+            <button
+              type="submit"
+              class="btn btn-primary btn-lg w-100"
+            >
+              <i class="fa-solid fa-paper-plane me-2"></i>
+              Send Message
+            </button>
+
+          </form>
+
+          <p class="text-muted small mt-3 mb-0">
+            Submitting this form opens your default
+            email application to prepare a message.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+<%- include('partials/footer') %>

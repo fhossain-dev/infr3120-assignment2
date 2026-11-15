@@ -17,8 +17,23 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+// Serve public files (CSS, JavaScript, images)
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Serve Bootstrap files
+app.use(
+  '/vendor/bootstrap',
+  express.static(path.join(__dirname, 'node_modules', 'bootstrap', 'dist'))
+);
+
+// Serve Font Awesome files
+app.use(
+  '/vendor/fontawesome',
+  express.static(path.join(__dirname, 'node_modules', '@fortawesome', 'fontawesome-free'))
+);
+
+// Routes
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
