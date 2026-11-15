@@ -1,8 +1,53 @@
+/* General page styling */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #212529;
 }
 
+/* Navigation */
+.navbar-brand {
+  font-weight: 700;
+}
+
+/* Main content */
+main {
+  min-height: 50vh;
+}
+
+/* Cards */
+.card {
+  border-radius: 8px;
+}
+
+/* Links */
 a {
-  color: #00B7FF;
+  text-decoration: none;
+}
+
+/* Contact form */
+.form-control {
+  width: 100%;
+}
+
+/* Footer */
+footer a:hover {
+  text-decoration: underline !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .btn {
+    white-space: normal;
+  }
 }
