@@ -1,8 +1,8 @@
 
-# Personal Portfolio Website — INFR3120 Assignment 2
+# Personal Portfolio Website - INFR3120 Assignment 2
 
 **Student:** Farhan Hossain  
-**Course:** INFR3120U — Web & Script Programming  
+**Course:** INFR3120U - Web & Script Programming  
 **Institution:** Ontario Tech University
 
 ## Project Overview
@@ -167,6 +167,27 @@ Testing included:
 - Checking installed dependencies using `npm audit`
 
 The final dependency audit reported **0 known vulnerabilities** at the time of testing.
+
+## Assistance and External Resources
+
+AI was only used as a supporting resource during this project for planning,
+understanding Express.js and EJS concepts from course materials,
+troubleshooting errors, reviewing implementation decisions, and organizing project
+documentations. 
+
+I worked through the project setup, code creation, reviewed and tested implementations,
+made configuration decisions, managed the GitHub repository, and deployed the completed
+website using Render.
+
+Additional resources used include:
+
+- Express.js and Express Generator documentation
+- EJS documentation
+- Bootstrap documentation
+- Font Awesome documentation
+- Node.js documentation
+
+AI assistance was used as a learning resource throughout the project.
 
 ## Author
 
